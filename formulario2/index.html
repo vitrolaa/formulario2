@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Formulario 2</title>
+</head>
+
+<body>
+
+    <div class="titulo">
+        <h1>Sistema de gestão academica</h1>
+        <h1>Manutenção de usuarios do sistema interno</h1>
+        <br>
+    </div>
+
+    <form>
+        <fieldset class="basico">
+            <div>
+                <label>Login</label>
+                <input type="text" nome="nome" id="nome">
+            </div>
+
+            <div>
+                <label>Senha</label>
+                <input type="password" nome="senha" id="senha">
+            </div>
+
+            <div>
+                <label>Senioridade</label>
+                <select name="caixa" id="caixadeselecao">
+                    <option selected disabled value="">Selecione</option>
+                    <option>Inativo</option>
+                    <option>Ativo</option>
+                </select>
+
+            </div>
+
+
+        </fieldset>
+
+        <fieldset class="tipos">
+            <div id="check">
+                <label>Tipo</label><br>
+                <input type="checkbox" id="tipo" name="tipo" value="tecnico">
+                <label for="tipo">Tecnico</label>
+                <input type="checkbox" id="tipo2" name="tipo2" value="professor">
+                <label for="tipo2">Professor</label>
+                <input type="checkbox" id="tipo3" name="tipo3" value="Aluno">
+                <label for="tipo3">Aluno</label>
+            </div>
+        </fieldset>
+
+        <fieldset class="data">
+            <div>
+                <label>Data de Criação</label>
+                <input type="date" nome="data" id="data">
+            </div>
+        </fieldset>
+
+        <fieldset class="perfil">
+            <div id="perfil">
+                <label>Perfil</label><br>
+                <input type="checkbox" id="perfil" name="perfil" value="convidado">
+                <label for="perfil">Convidado</label>
+                <input type="checkbox" id="perfil2" name="perfil2" value="administrador">
+                <label for="perfil2">Administrador</label>
+            </div>
+        </fieldset>
+
+        <fieldset class="observacao">
+            <div class="obss">
+                <label>Observações</label>
+                <textarea name="obs" id="observacao" cols="20" rows="2"></textarea>
+            </div>
+
+            <div class="obss">
+                <input type="checkbox" id="obs1" name="obs1" value="Compras">
+                <label for="obs1">Compras</label>
+                <input type="checkbox" id="obs2" name="obs2" value="bliblioteca">
+                <label for="obs2">bliblioteca</label>
+                <input type="checkbox" id="obs3" name="obs3" value="academico">
+                <label for="obs3">Academico</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <div class="modulo">
+                <label>Módulos</label><br>
+                <input type="checkbox" id="mod1" name="mod1" value="Documentação">
+                <label for="mod1">Documentação</label>
+                <input type="checkbox" id="mod2" name="mod2" value="Recursos Humanos">
+                <label for="mod2">Recursos Humanos</label>
+            </div>
+        </fieldset>
+
+    </form>
+
+</body>
+
+</html>
